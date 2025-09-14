@@ -78,7 +78,7 @@ section.bio img {
   width: 80px;
   height: 80px;
   object-fit: cover;
-  border-radius: 50%;
+  border-radius: 20px;
   border: 3px solid #cc1c0d;
 }
 
