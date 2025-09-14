@@ -45,11 +45,12 @@ h4,
 h5,
 h6 {
   font-weight: 700;
-  color: #cc1c0d;
-  background: transparent;
-  border-bottom: 1px solid #929ca4;
-  padding: 6px 0 6px 10px;
-  border-radius: 0;
+  color: #333;
+  background: #dfe3e6;
+  border: 1px solid #929ca4;
+  padding: 6px 10px;
+  border-radius: 8px;
+  margin: 12px 0 8px;
 }
 
 a {
@@ -80,43 +81,66 @@ section.bio img {
   border: 3px solid #cc1c0d;
 }
 section.bio h3 {
-  border: none;
-  background: transparent;
-  padding: 0;
   margin: 0 0 6px;
+  padding: 0;
   color: #cc1c0d;
+  background: transparent;
+  border: none;
+}
+section.bio p strong {
+  display: block;
+  font-weight: 700;
+  color: #000;
 }
 
 section.pricing {
-  background: #fff;
-  border-radius: 10px;
-  padding: 10px;
-  overflow: auto;
+  background: transparent;
+  padding: 0;
+  margin: 0 0 8px;
 }
 section.pricing .plan {
   float: left;
-  width: 25%;
+  width: 23%;
+  margin: 0 2% 16px 0;
+  background: #fff;
+  border: 1px solid #cfd6dc;
+  border-radius: 10px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
   padding: 12px;
-  border-left: 4px solid transparent;
+  position: relative;
 }
-section.pricing .plan:nth-child(1) {
-  border-left-color: #cc1c0d;
+section.pricing .plan:last-child {
+  margin-right: 0;
 }
-section.pricing .plan:nth-child(2) {
-  border-left-color: #37a4a4;
+section.pricing .plan::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 4px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background: #ccc;
 }
-section.pricing .plan:nth-child(3) {
-  border-left-color: #685288;
+section.pricing .plan:nth-child(1)::before {
+  background: #cc1c0d;
 }
-section.pricing .plan:nth-child(4) {
-  border-left-color: #000000;
+section.pricing .plan:nth-child(2)::before {
+  background: #37a4a4;
+}
+section.pricing .plan:nth-child(3)::before {
+  background: #685288;
+}
+section.pricing .plan:nth-child(4)::before {
+  background: #000;
 }
 section.pricing .plan h3 {
-  margin-top: 8px;
+  margin: 10px 0 6px;
   background: transparent;
   border: none;
   padding: 0;
-  color: #333;
+  color: #000;
 }
 section.pricing .plan p {
   margin: 0;
@@ -130,7 +154,7 @@ ul {
 #vconvert,
 #vretain {
   font-weight: 700;
-  color: #cc1c0d;
+  color: #000;
   margin: 24px 0 6px;
   padding-left: 8px;
   border-left: 4px solid #cc1c0d;
