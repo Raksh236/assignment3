@@ -30,9 +30,6 @@ img + ul a {
   padding: 2px 0;
   color: #cc1c0d;
   text-decoration: underline;
-  background: transparent;
-  border: 0;
-  border-radius: 0;
 }
 img + ul a:hover {
   text-decoration: none;
@@ -45,7 +42,7 @@ h4,
 h5,
 h6 {
   font-weight: 700;
-  color: #333;
+  color: #cc1c0d;
   background: #dfe3e6;
   border: 1px solid #929ca4;
   padding: 6px 10px;
@@ -83,13 +80,13 @@ section.bio img {
 section.bio h3 {
   margin: 0 0 6px;
   padding: 0;
-  color: #cc1c0d;
+  color: #000;
   background: transparent;
   border: none;
 }
 section.bio p strong {
   display: block;
-  font-weight: 700;
+  font-weight: 400;
   color: #000;
 }
 
