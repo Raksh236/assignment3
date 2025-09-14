@@ -118,10 +118,11 @@ section.pricing .plan {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  min-height: 260px; /* keeps Enterprise same height */
+  min-height: 260px;
 }
 
 section.pricing .plan-header {
+  width: 100%;
   height: 48px;
   display: flex;
   align-items: center;
@@ -129,6 +130,7 @@ section.pricing .plan-header {
   position: relative;
   margin-bottom: 10px;
 }
+
 section.pricing .plan-header .color-bar {
   position: absolute;
   left: 0;
