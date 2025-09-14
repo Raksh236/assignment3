@@ -158,6 +158,22 @@ section.pricing .logo-placeholder {
   margin-bottom: 6px;
 }
 
+section.pricing .plan {
+  position: relative;
+}
+
+section.pricing .enterprise-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+
 ul {
   margin: 0 0 1em 1.2em;
 }
