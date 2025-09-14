@@ -73,74 +73,82 @@ section.bio {
 }
 section.bio img {
   float: left;
-  margin-right: 12px;
+  margin: 0 12px 8px 0;
   border-radius: 8px;
   border: 3px solid #cc1c0d;
 }
 section.bio h3 {
-  margin: 0 0 6px;
+  margin: 0;
   padding: 0;
-  color: #000;
+  color: #111;
   background: transparent;
   border: none;
+  font-weight: 700;
+  display: inline;
 }
 section.bio p strong {
-  display: block;
+  display: inline;
   font-weight: 400;
-  color: #000;
+  color: #111;
+  margin-left: 6px;
+}
+section.bio p {
+  margin: 0 0 8px;
+  color: #111;
 }
 
 section.pricing {
   background: transparent;
   padding: 0;
   margin: 0 0 8px;
+  display: flex;
+  gap: 24px;
+  align-items: stretch;
 }
 section.pricing .plan {
-  float: left;
-  width: 23%;
-  margin: 0 2% 16px 0;
+  flex: 1;
   background: #fff;
   border: 1px solid #cfd6dc;
   border-radius: 10px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
   padding: 12px;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-section.pricing .plan:last-child {
-  margin-right: 0;
+section.pricing .plan img {
+  display: block;
+  margin-bottom: 6px;
 }
-section.pricing .plan::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
+section.pricing .color-bar {
   width: 100%;
   height: 4px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  background: #ccc;
+  margin: 4px 0 10px 0;
+  border-radius: 2px;
 }
-section.pricing .plan:nth-child(1)::before {
+section.pricing .plan:nth-child(1) .color-bar {
   background: #cc1c0d;
 }
-section.pricing .plan:nth-child(2)::before {
+section.pricing .plan:nth-child(2) .color-bar {
   background: #37a4a4;
 }
-section.pricing .plan:nth-child(3)::before {
+section.pricing .plan:nth-child(3) .color-bar {
   background: #685288;
 }
-section.pricing .plan:nth-child(4)::before {
+section.pricing .plan:nth-child(4) .color-bar {
   background: #000;
 }
 section.pricing .plan h3 {
-  margin: 10px 0 6px;
+  margin: 6px 0;
   background: transparent;
   border: none;
   padding: 0;
   color: #000;
+  text-align: center;
 }
 section.pricing .plan p {
   margin: 0;
+  text-align: center;
 }
 
 ul {
@@ -167,4 +175,34 @@ ul {
   border-radius: 10px;
   padding: 10px 12px;
   margin: 6px 0 12px;
+}
+
+h2:nth-of-type(2) + p,
+h2:nth-of-type(2) + p + p,
+h2:nth-of-type(2) + p + p + p {
+  color: #000;
+}
+
+h2:nth-of-type(2) ~ p .solution {
+  color: #000;
+  font-weight: 400;
+}
+
+h2:nth-of-type(2) + p::first-line,
+h2:nth-of-type(2) + p + p::first-line,
+h2:nth-of-type(2) + p + p + p::first-line {
+  color: #000;
+  font-weight: 400;
+}
+
+#vprospect + p img,
+#vconvert + p img,
+#vretain + p img {
+  float: left;
+  margin: 0 12px 6px 0;
+}
+#vprospect + p + p,
+#vconvert + p + p,
+#vretain + p + p {
+  overflow: hidden;
 }
