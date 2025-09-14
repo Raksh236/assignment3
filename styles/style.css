@@ -72,15 +72,16 @@ section.bio {
   box-shadow: none;
 }
 
-section.bio img {
-  float: left;
-  margin: 0 12px 8px 0;
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 2px solid #cc1c0d;
+section.bio img{
+  float:left;
+  margin:0 12px 8px 0;
+  width:80px;           
+  height:100px;
+  object-fit:cover;
+  border-radius:10px;   
+  border:3px solid #cc1c0d;  
 }
+
 
 section.bio h3 {
   margin: 0;
@@ -102,53 +103,34 @@ section.bio p {
   color: #111;
 }
 
-section.pricing {
-  background: transparent;
-  padding: 0;
-  margin: 0 0 8px;
-  display: flex;
-  gap: 24px;
-  align-items: stretch;
+section.pricing{
+  display:flex;
+  gap:24px;
+  align-items:stretch;
 }
-section.pricing .plan {
-  flex: 1;
-  background: #fff;
-  border: 1px solid #cfd6dc;
-  border-radius: 10px;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
-  padding: 12px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+section.pricing .plan{
+  flex:1;
+  background:#fff;
+  border:1px solid #cfd6dc;
+  border-radius:10px;
+  box-shadow:0 1px 2px rgba(0,0,0,.06);
+  padding:12px;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-start;
+  align-items:center;
+  min-height:260px;     /* keeps Enterprise same height */
 }
-section.pricing .plan-header {
-  position: relative;
-  width: 100%;
-  height: 48px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 8px;
+
+section.pricing .plan-header{
+  height:48px;
+  display:flex;align-items:center;justify-content:center;
+  position:relative;margin-bottom:10px;
 }
-section.pricing .plan-header img {
-  height: 36px;
-  width: auto;
-  display: block;
+section.pricing .plan-header .color-bar{
+  position:absolute;left:12px;right:12px;bottom:0;height:4px;border-radius:2px;
 }
-section.pricing .enterprise-label {
-  font-weight: 700;
-  font-size: 12px;
-  letter-spacing: 0.5px;
-}
-section.pricing .plan-header .color-bar {
-  position: absolute;
-  left: 12px;
-  right: 12px;
-  bottom: 0;
-  height: 4px;
-  border-radius: 2px;
-  background: #ccc;
-}
+
 section.pricing .plan:nth-child(1) .plan-header .color-bar {
   background: #cc1c0d;
 }
