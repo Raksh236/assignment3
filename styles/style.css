@@ -117,26 +117,44 @@ section.pricing .plan {
   flex-direction: column;
   align-items: center;
 }
-section.pricing .plan img {
-  display: block;
-  margin-bottom: 6px;
-}
-section.pricing .color-bar {
+section.pricing .plan-header {
+  position: relative;
   width: 100%;
-  height: 4px;
-  margin: 4px 0 10px 0;
-  border-radius: 2px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
 }
-section.pricing .plan:nth-child(1) .color-bar {
+section.pricing .plan-header img {
+  height: 36px;
+  width: auto;
+  display: block;
+}
+section.pricing .enterprise-label {
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+}
+section.pricing .plan-header .color-bar {
+  position: absolute;
+  left: 12px;
+  right: 12px;
+  bottom: 0;
+  height: 4px;
+  border-radius: 2px;
+  background: #ccc;
+}
+section.pricing .plan:nth-child(1) .plan-header .color-bar {
   background: #cc1c0d;
 }
-section.pricing .plan:nth-child(2) .color-bar {
+section.pricing .plan:nth-child(2) .plan-header .color-bar {
   background: #37a4a4;
 }
-section.pricing .plan:nth-child(3) .color-bar {
+section.pricing .plan:nth-child(3) .plan-header .color-bar {
   background: #685288;
 }
-section.pricing .plan:nth-child(4) .color-bar {
+section.pricing .plan:nth-child(4) .plan-header .color-bar {
   background: #000;
 }
 section.pricing .plan h3 {
@@ -150,28 +168,6 @@ section.pricing .plan h3 {
 section.pricing .plan p {
   margin: 0;
   text-align: center;
-}
-
-section.pricing .logo-placeholder {
-  width: 63px;
-  height: 36px;
-  margin-bottom: 6px;
-}
-
-section.pricing .plan {
-  position: relative;
-}
-
-section.pricing .enterprise-label {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 36px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 700;
 }
 
 ul {
