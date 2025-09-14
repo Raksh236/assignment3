@@ -74,12 +74,12 @@ section.bio {
 
 section.bio img {
   float: left;
-  margin: 0 12px 6px 0;
+  margin: 0 12px 8px 0;
   width: 80px;
-  height: 80px;
+  height: 100px;
   object-fit: cover;
-  border-radius: 20px;
-  border: 3px solid #cc1c0d;
+  border-radius: 12px;
+  border: 2px solid #cc1c0d;
 }
 
 section.bio h3 {
@@ -89,14 +89,16 @@ section.bio h3 {
   background: transparent;
   border: none;
   font-weight: 700;
-  display: inline;
+  display: block;
 }
+
 section.bio p strong {
-  display: inline;
+  display: block;
   font-weight: 400;
   color: #111;
-  margin-left: 6px;
+  margin: 0 0 4px;
 }
+
 section.bio p {
   margin: 0 0 8px;
   color: #111;
