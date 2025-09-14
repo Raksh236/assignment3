@@ -5,9 +5,9 @@
     <title>Welcome to Vecta Corporation</title>
     <link rel="stylesheet" href="styles/style.css" />
     <style>
-      h2 + p::first-line,
-      h2 + p + p::first-line,
-      h2 + p + p + p::first-line {
+      h2:nth-of-type(2) + p::first-line,
+      h2:nth-of-type(2) + p + p::first-line,
+      h2:nth-of-type(2) + p + p + p::first-line {
         font-weight: bold;
         color: #cc1c0d;
       }
