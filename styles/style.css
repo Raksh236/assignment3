@@ -235,15 +235,3 @@ h2:nth-of-type(2) + p + p + p::first-line {
 #vretain + p + p {
   overflow: hidden;
 }
-
-.solution-title {
-  display: block;
-  font-weight: 700;
-  color: #000;
-  margin-top: 4px;
-}
-
-.solution-desc {
-  margin: 0 0 12px;
-  color: #111;
-}
