@@ -102,65 +102,77 @@ section.bio p strong {
 section.bio p {
   margin: 0 0 8px;
   color: #111;
+  display: block;
 }
 
-section.pricing{
-  background:transparent;
-  padding:0;
-  margin:0 0 8px;
+section.pricing {
+  background: transparent;
+  padding: 0;
+  margin: 0 0 8px;
 }
-section.pricing::after{
-  content:"";
-  display:block;
-  clear:both;
-}
-
-section.pricing .plan{
-  float:left;
-  width:23%;
-  margin-right:2%;
-  background:#fff;
-  border:1px solid #cfd6dc;
-  border-radius:10px;
-  box-shadow:0 1px 2px rgba(0,0,0,.06);
-  padding:12px;
-  min-height:260px;         
-  text-align:center;
-}
-section.pricing .plan:nth-child(4){ margin-right:0; }
-
-section.pricing .plan-header{
-  position:relative;
-  width:100%;
-  height:48px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  margin-bottom:10px;
-}
-section.pricing .plan-header .color-bar{
-  position:absolute;
-  left:12px;                 
-  right:12px;
-  bottom:0;
-  height:4px;
-  border-radius:2px;
+section.pricing::after {
+  content: "";
+  display: block;
+  clear: both;
 }
 
-section.pricing .plan:nth-child(1) .plan-header .color-bar{ background:#cc1c0d; }
-section.pricing .plan:nth-child(2) .plan-header .color-bar{ background:#37a4a4; }
-section.pricing .plan:nth-child(3) .plan-header .color-bar{ background:#685288; }
-section.pricing .plan:nth-child(4) .plan-header .color-bar{ background:#000; }
-
-section.pricing .plan h3{
-  margin:6px 0;
-  background:transparent;
-  border:none;
-  padding:0;
-  color:#000;
+section.pricing .plan {
+  float: left;
+  width: 23%;
+  margin-right: 2%;
+  background: #fff;
+  border: 1px solid #cfd6dc;
+  border-radius: 10px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
+  padding: 12px;
+  min-height: 260px;
+  text-align: center;
 }
-section.pricing .plan p{ margin:0; }
+section.pricing .plan:nth-child(4) {
+  margin-right: 0;
+}
 
+section.pricing .plan-header {
+  position: relative;
+  width: 100%;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+section.pricing .plan-header .color-bar {
+  position: absolute;
+  left: 12px;
+  right: 12px;
+  bottom: 0;
+  height: 4px;
+  border-radius: 2px;
+}
+
+section.pricing .plan:nth-child(1) .plan-header .color-bar {
+  background: #cc1c0d;
+}
+section.pricing .plan:nth-child(2) .plan-header .color-bar {
+  background: #37a4a4;
+}
+section.pricing .plan:nth-child(3) .plan-header .color-bar {
+  background: #685288;
+}
+section.pricing .plan:nth-child(4) .plan-header .color-bar {
+  background: #000;
+}
+
+section.pricing .plan h3 {
+  margin: 6px 0;
+  background: transparent;
+  border: none;
+  padding: 0;
+  color: #000;
+}
+section.pricing .plan p {
+  margin: 0;
+}
 
 ul {
   margin: 0 0 1em 1.2em;
@@ -215,4 +227,5 @@ h2:nth-of-type(2) + p + p + p::first-line {
 #vprospect + p + p,
 #vconvert + p + p,
 #vretain + p + p {
-  overflow: hidden
+  overflow: hidden;
+}
