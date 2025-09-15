@@ -105,6 +105,13 @@ section.bio p {
   display: block;
 }
 
+section.bio .designation {
+  font-weight: 400;     
+  color: #111;          
+  margin: 0 0 4px;      
+}
+
+
 section.pricing {
   background: transparent;
   padding: 0;
