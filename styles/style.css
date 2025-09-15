@@ -75,10 +75,10 @@ section.bio {
 section.bio img {
   float: left;
   margin: 0 12px 8px 0;
-  width: 90px;
-  height: 110px;
+  width: 100px;
+  height: 120px;
   object-fit: cover;
-  border-radius: 12px;
+  border-radius: 15px;
   border: 2px solid #cc1c0d;
 }
 
